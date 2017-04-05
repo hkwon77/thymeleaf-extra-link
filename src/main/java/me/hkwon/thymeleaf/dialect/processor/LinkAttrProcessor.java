@@ -71,7 +71,7 @@ public class LinkAttrProcessor extends AbstractAttributeTagProcessor {
                         uri = new URI(requestContext.getRequestUri() + "?" + requestContext.getQueryString());
                         nvp = URLEncodedUtils.parse(uri, Charset.forName(charset));
                     } catch (URISyntaxException e) {
-                        log.warn("Passed URI has not valid syntax : {}", uri);
+                        log.error("Passed URI has not valid syntax : " + uri, e);
                     }
 
                     // Exclude duplication query string
