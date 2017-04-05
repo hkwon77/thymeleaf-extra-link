@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'idea'
+}
+
+group 'me.hkwon'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-webmvc:4.3.7.RELEASE'
+    compile 'org.thymeleaf:thymeleaf:3.0.5.RELEASE'
+    compile 'org.thymeleaf:thymeleaf-spring4:3.0.5.RELEASE'
+    compile 'org.apache.httpcomponents:httpclient:4.5.3'
+    compile 'org.apache.commons:commons-lang3:3.5'
+    compileOnly 'org.projectlombok:lombok:1.16.14'
+    testCompile 'junit:junit:4.11'
+}
