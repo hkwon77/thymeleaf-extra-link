@@ -4,7 +4,7 @@ request로 넘어오는 query string을 모두 링크 생성시 자동으로 붙
 
 ## Dialect Engine에 등록
 
-Spring boot 를 사용한다면 `IProcessorDialect` 클래스를 구현한 놈은 자동으로 등록해주기 때문에 별다른 설정 없어 `Bean`을 추가해주면 된다.
+Spring boot 를 사용한다면 `IProcessorDialect` 클래스를 구현한 클래스는 자동으로 등록해주기 때문에 별다른 설정 없어 `Bean`을 추가해주면 된다.
 
 ```java
 @Configuration
